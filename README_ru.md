@@ -10,7 +10,7 @@
 ### Горячая установка
 
 ```sh
-pip3 install cloudflare_api==0.0.1
+pip3 install cloudflare_api==0.0.2
 ```
 
 
@@ -36,7 +36,7 @@ print(delete)
 
 <hr />
 
-Версия = 0.0.1 <br />
+Версия = 0.0.2 <br />
 Название библиотеки = cloudflare_api <br />
 Название = CloudFlare API <br />
 Ключевые слова = cloudflare api domain subdomains <br />

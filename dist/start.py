@@ -40,7 +40,7 @@ class CLOUDFLARE_API(object):
     def ifNotResticted(self, subdomain):
         if not subdomain:
             return False
-        if subdomain.lower() in ['api','www','demo','admin','airbnb','booking','user','manager','director']:
+        if subdomain.lower() in ['api','www']:
             return False
         return True
 
@@ -66,7 +66,7 @@ class CLOUDFLARE_API(object):
 
         if self.ifNotResticted(subdomain):
 
-            dns_record = {'name': subdomain, 'type': 'CNAME', 'content': 'estate.im'}
+            dns_record = {'name': subdomain, 'type': 'CNAME', 'content': self.domain}
 
             # Create DNS record
             try:
@@ -104,6 +104,6 @@ if __name__ == '__main__':
     email = '****'
     token = '****'
 
-    s = CLOUD_FLARE_API(domain='estate.im', email=email, token=token).addSubdomain(subdomain='easy')
+    s = CLOUDFLARE_API(domain='estate.im', email=email, token=token).addSubdomain(subdomain='easy')
     # s = CLOUD_FLARE_API(domain='estate.im', email=email, token=token).deleteSubdomain(subdomain='welcomenew')
     print(s)

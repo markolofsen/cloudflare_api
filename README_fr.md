@@ -10,7 +10,7 @@ Bibliothèque pour ajouter et supprimer des sous-domaines dans CloudFlare.
 ### Chaud à installer
 
 ```sh
-pip3 install cloudflare_api==0.0.1
+pip3 install cloudflare_api==0.0.2
 ```
 
 
@@ -36,7 +36,7 @@ print(delete)
 
 <hr />
 
-Version = 0.0.1 <br />
+Version = 0.0.2 <br />
 Nom de la bibliothèque = cloudflare_api <br />
 Titre = CloudFlare API <br />
 Mots-clés = cloudflare api domain subdomains <br />
