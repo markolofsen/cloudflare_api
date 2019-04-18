@@ -61,12 +61,19 @@ class CLOUDFLARE_API(object):
 
         return False
 
+    def ARECORD(self, subdomain, destination):
+        self.addSubdomain(subdomain, destination, dns_type='A')
 
-    def addSubdomain(self, subdomain):
+    def CNAME(self, subdomain, destination):
+        self.addSubdomain(subdomain, destination, dns_type='CNAME')
+
+    def addSubdomain(self, subdomain, destination, dns_type):
 
         if self.ifNotResticted(subdomain):
 
-            dns_record = {'name': subdomain, 'type': 'CNAME', 'content': self.domain}
+            dns_record = {'name': subdomain, 'type': dns_type, 'content': destination}
+
+            print(dns_record)
 
             # Create DNS record
             try:

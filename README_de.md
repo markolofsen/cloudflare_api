@@ -10,7 +10,7 @@ Bibliothek zum Hinzufügen und Entfernen von Unterdomänen in CloudFlare.
 ### Heiß zu installieren
 
 ```sh
-pip3 install cloudflare_api==0.0.2
+pip3 install cloudflare_api==0.0.3
 ```
 
 
@@ -36,7 +36,7 @@ print(delete)
 
 <hr />
 
-Version = 0.0.2 <br />
+Version = 0.0.3 <br />
 Bibliotheksname = cloudflare_api <br />
 Titel = CloudFlare API <br />
 Schlüsselwörter = cloudflare api domain subdomains <br />
